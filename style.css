@@ -4,13 +4,44 @@
   box-sizing: border-box;
 }
 
-:root {
-  background-color: beige;
-  color: black;
+html, body {
+  height: 100%;
 }
+
+:root {
+  background-color: #f5f5dc;
+  color: #242424;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  flex: 0 1 auto;
+  background-color: #8d8d7e;
+}
+
+.mainContent {
+  flex: 1 1 auto;
+}
+
+.footer {
+  flex: 0 1 40px;
+  text-align: center;
+  background-color: #8d8d7e;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     background-color: #242424;
-    color: beige;
+    color: #f5f5dc;
+  }
+  .navbar, .footer {
+    background-color: #4b4b4b;
   }
 }
