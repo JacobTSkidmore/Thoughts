@@ -24,16 +24,43 @@ body {
   padding: 1em;
   flex: 0 1 auto;
   background-color: #8d8d7e;
+  align-items: center;
+}
+
+.logo {
+  font-size: 200%;
 }
 
 .mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  width: 85%;
+  align-self: center;
+  text-align: justify;
+}
+
+.focus {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.carousel {
+  flex: 1 1 auto;
+}
+
+.latestBlog {
   flex: 1 1 auto;
 }
 
 .footer {
+  display: flex;
   flex: 0 1 40px;
-  text-align: center;
   background-color: #8d8d7e;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
