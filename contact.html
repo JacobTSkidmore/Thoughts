@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="contact.css">
   <title>Suggestions/Contact</title>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("gEmhjJzW_ysAc0qwa");
+    })();
+  </script>
+  <script src="contact.js"></script>
 </head>
 <body>
   <div class="navbar">
@@ -22,7 +31,7 @@
   </div>
   <div class="mainContent">
     <h1>Do you have input? Let me know!</h1>
-    <form class= "suggestions" action="unknown.php" method="post">
+    <div class= "suggestions">
       <label for="name">Your Name</label>
       <input type="text" id="name" name="visitorName" placeholder="John Doe" pattern="[A-Z\sa-z]{3,20}" required>
       
@@ -32,12 +41,14 @@
       <label for="message">Write your messages/suggestions</label>
       <textarea name="visitorMessage" id="message" cols="30" rows="10" placeholder="Give me some suggestions to write about. Nothing controversial please, this is a happy place!"></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+      <button onclick="SendMail();">Submit</button>
+    </div>
   </div>
   <div class="footer">
     <p>Created by Jacob Skidmore</p>
   </div>
 </body>
 <script src="index.js"></script>
+
+
 </html>
