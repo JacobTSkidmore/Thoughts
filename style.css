@@ -20,16 +20,44 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding: 1em;
+  justify-content: space-around;
+  padding: 1rem;
   flex: 0 1 auto;
   background-color: #8d8d7e;
   align-items: center;
   margin-bottom: 0.5rem;
+  gap: 5vw;
 }
 
 .logo {
   font-size: 200%;
+  flex: 1;
+}
+
+.navItems {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #f5f5dc;
+}
+
+.dark {
+  background-color: #242424;
+  transition: all 0.5s ease-in-out;
+  font-size: 125%;
+  border-radius: 50px;
 }
 
 .mainContent {
