@@ -1,0 +1,14 @@
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  flex: 1;
+}
+
+h1 {
+  flex: 1;
+  margin-top: 2rem;
+}
+
+
