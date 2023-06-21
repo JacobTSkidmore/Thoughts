@@ -1,0 +1,46 @@
+.fiveW {
+  background-color: #8d8d7e;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #303030;
+  transition: all 1s ease-in-out;
+}
+
+.who {
+  max-height: 2rem;
+  transition: all 1s ease-in-out;
+}
+.what {
+  max-height: 2rem;
+  transition: all 1s ease-in-out;
+}
+.when {
+  max-height: 2rem;
+  transition: all 1s ease-in-out;
+}
+.where {
+  max-height: 2rem;
+  transition: all 1s ease-in-out;
+}
+.how {
+  max-height: 2rem;
+  transition: all 1s ease-in-out;
+}
+
+.hidden {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  
+}
+
+.mainContent {
+  justify-content: center;
+  gap: 0;
+}
+
+.mainContent a {
+  color: #f5f5dc;
+}
