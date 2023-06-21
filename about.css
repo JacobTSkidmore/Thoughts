@@ -19,22 +19,36 @@
   flex: 0;
   min-width: 1%;
   max-width: 10px;
-  background-color: white;
-  border: 1px black solid;
+  background-color: black;
+  border: 1px white solid;
   border-radius: 10px;
   overflow: visible;
 }
 
 .circle {
+  border: 1px black solid;
+}
+
+@media (prefers-color-scheme: dark) {
+  .vertLine {
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  .circle {
+    border: 1px solid white;
+  }
+}
+.circle {
   min-width: 400%;
   max-width: 40px;
   min-height: 50%;
-  border: 1px white solid;
   border-radius: 500px;
   margin-left: -150%;
   border-top: 0;
   border-bottom: 0;
 }
+
 
 .leftCircle {
   border-right: 0;
