@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="post.css">
   <title>Post a Blog</title>
   <script src="post.js"></script>
 </head>
@@ -23,7 +23,27 @@
   </div>
   <div class="mainContent">
     <div class="postInfo">
-      Placeholder
+      <div>
+        <h3>Title :</h3>
+        <input type="text" id="postTitle" placeholder="Learning Gratitude">
+      </div>
+      <div>
+        <h3>Text Content :</h3>
+        <textarea id="postText" cols="30" rows="10"></textarea>
+      </div>
+      <div class="bottom">
+        <div>
+          <h3>Date :</h3>
+          <input type="text" id="postDate" placeholder="01-01-2000">
+        </div>
+        <div>
+          <h3>Topic:</h3>
+          <input type="text" id="postTopic" placeholder="Gratitude">
+        </div>
+      </div>
+      <div>
+        <button onclick="postBlog()">Post</button>
+      </div>
     </div>
   </div>
   <div class="footer">
